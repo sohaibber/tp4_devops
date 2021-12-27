@@ -1,6 +1,6 @@
 pipeline { 
  environment { 
- registry = "kelguemmat/tp4" 
+ registry = "sohaibber/tp4jenkinsfile" 
  registryCredential = 'dockerhub' 
  dockerImage = '' 
  } 
@@ -8,7 +8,7 @@ pipeline {
  stages { 
  stage('Cloning Git') { 
  steps { 
- git 'https://github.com/kelguemmat/tp4master21-22'  } 
+ git 'https://github.com/sohaibber/tp4_devops'  } 
  } 
  stage('Building image') { 
  steps{ 
